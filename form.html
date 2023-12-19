@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="inner-container flex-center">
+        <div class="heading-container">
+          <img class="logo-img" src="assets/logo.png" alt="Logo" />
+          <h1>For Individuals</h1>
+          <p class="desktop">
+            " Start benefiting from the wellness experience. For companoes
+            looking on increasing productivity, and improving organization
+            wellness. "
+          </p>
+          <p class="mobile">
+            " Inspiring wholesome harmony for the mind, body and spirit, for
+            everyone, everywhere. "
+          </p>
+        </div>
+      </div>
+
+      <div class="inner-container">
+        <form class="form" action="https://httpbin.org/post" method="post">
+          <div class="input-group">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" />
+          </div>
+
+          <div class="input-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name" />
+          </div>
+
+          <div class="input-group">
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+              <option value="" disabled selected hidden>Select gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="date-of-birth">Date of Birth</label>
+            <input type="date" name="date-of-birth" id="date-of-birth" />
+          </div>
+
+          <div class="input-group">
+            <label for="weight">Weight (KG)</label>
+            <input type="text" name="weight" id="weight" />
+          </div>
+
+          <div class="input-group">
+            <label for="height">Height (CM)</label>
+            <input type="text" name="height" id="height" />
+          </div>
+
+          <div class="input-group">
+            <label for="activity-level">Activity Level</label>
+            <select name="activity-level" id="activity-level">
+              <option value="" disabled selected hidden>Activity Level</option>
+              <option value="level-one">Level One</option>
+              <option value="level-two">Level Two</option>
+            </select>
+          </div>
+
+          <div class="input-group no-wrap">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+
+          <button type="submit">Register</button>
+          <p>
+            By clicking Register, you agree to our
+            <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>
+          </p>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
